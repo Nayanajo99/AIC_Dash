@@ -17,10 +17,11 @@ Installation (Local Setup)
 
 Clone the repository 
 git clone : https://github.com/Nayanajo99/AIC_Dash.git
-cd AIC_Dash
 
-Requirements
+cd AIC_Dash
 #
+Requirements
+
 pip install -r requirements.txt
 #
 run python app.py
