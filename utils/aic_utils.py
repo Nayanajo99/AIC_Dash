@@ -1,8 +1,8 @@
 import os
 import numpy as np
 from dotenv import load_dotenv
-#import aic_sdk as aic
-from aic import Model, AICModelType, AICParameter
+import aic_sdk as aic
+#from aic import Model, AICModelType, AICParameter
 load_dotenv()
 
 class AICEnhancer:
