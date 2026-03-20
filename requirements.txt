@@ -1,8 +1,11 @@
 dash==2.17.1
+flask
 plotly==5.22.0
 numpy==1.26.4
+pandas
 scipy==1.11.4
 soundfile==0.12.1
+librosa
 python-dotenv==1.0.1
 aic-sdk==0.6.0.post1
 gunicorn==21.2.0
