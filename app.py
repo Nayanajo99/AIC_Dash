@@ -1,3 +1,4 @@
+import os
 import numpy as np
 from dash import Dash, html, dcc, Input, Output
 
@@ -11,7 +12,11 @@ from utils.audio_utils import (
 from utils.spectrogram_utils import create_spectrogram
 from utils.aic_utils import AICEnhancer
 
-# Initialize SDK first
+# Create Dash app FIRST
+app = Dash(__name__)
+server = app.server
+
+# Initialize SDK
 enhancer = AICEnhancer()
 
 # Load clean audio
@@ -23,9 +28,6 @@ sr = enhancer.sample_rate
 # Precompute original displays
 orig_spec = create_spectrogram(clean_audio, sr, "Original")
 orig_audio = audio_to_base64(clean_audio, sr)
-
-app = Dash(__name__)
-server = app.server
 
 app.layout = html.Div(
     [
@@ -61,7 +63,10 @@ app.layout = html.Div(
                     ],
                     style={"marginBottom": "20px"},
                 ),
-                html.Div(id="vad-output", style={"fontWeight": "bold", "marginBottom": "20px"}),
+                html.Div(
+                    id="vad-output",
+                    style={"fontWeight": "bold", "marginBottom": "20px"},
+                ),
             ]
         ),
 
@@ -130,4 +135,5 @@ def update_dashboard(noise_db, enhance_level):
     )
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port, debug=False)
