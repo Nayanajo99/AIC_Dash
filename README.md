@@ -9,18 +9,11 @@ Frontend: Dash (Plotly)
 	•	Visualization: Plotly
 	•	Deployment: Render (Gunicorn)
 
-.
-├── app.py                # Main Dash application
-├── requirements.txt     # Python dependencies
-├── render.yaml          # Deployment configuration
-├── assets/
-│   └── style.css        # Custom styling
-└── data/
-    └── clean.wav        # Sample audio file
 
 Installation (Local Setup)
 
-Clone the repositorygit clone : https://github.com/](https://github.com/Nayanajo99/AIC_Dash.git)
+Clone the repository 
+git clone : https://github.com/Nayanajo99/AIC_Dash.git
 
 Requirements
 pip install -r requirements.txt
