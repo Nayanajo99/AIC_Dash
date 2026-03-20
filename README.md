@@ -1,9 +1,12 @@
+About
+
 This project is a web-based audio processing application that enhances speech quality by reducing noise. It provides an interactive interface to visualize and compare original and processed audio in real time.
 
 
 
 
 Frontend: Dash (Plotly)
+
 	•	Backend: Python (Flask via Dash)
 	•	Audio Processing: Librosa, NumPy, SciPy
 	•	Visualization: Plotly
@@ -14,7 +17,11 @@ Installation (Local Setup)
 
 Clone the repository 
 git clone : https://github.com/Nayanajo99/AIC_Dash.git
+cd AIC_Dash
 
 Requirements
+#
 pip install -r requirements.txt
-python app.py
+#
+run python app.py
+
