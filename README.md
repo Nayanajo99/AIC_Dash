@@ -2,12 +2,10 @@ About
 
 This project is a web-based audio processing application that enhances speech quality by reducing noise. It provides an interactive interface to visualize and compare original and processed audio in real time.
 
-
-
-
-Frontend: Dash (Plotly)
+Specifications
 
 	•	Backend: Python (Flask via Dash)
+	•   Frontend: Dash (Plotly)
 	•	Audio Processing: Librosa, NumPy, SciPy
 	•	Visualization: Plotly
 	•	Deployment: Render (Gunicorn)
