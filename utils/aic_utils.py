@@ -14,7 +14,7 @@ class AICEnhancer:
         print("Loading model...")
        
 
-        model_path = os.path.join("models", "quail_vf_2_0_l_16khz_d42jls1e_v18.aicmodel")
+        model_path = os.path.join("models", "rook_l_16khz_dtv5nvgu_v20.aicmodel")
 
         #model_path = "/Users/nayanajacob/Desktop/AIC_Dash_App/models/quail_vf_2_0_l_16khz_d42jls1e_v18.aicmodel"
 
