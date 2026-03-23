@@ -12,8 +12,11 @@ class AICEnhancer:
             raise ValueError("Missing AIC_SDK_LICENSE in .env")
 
         print("Loading model...")
+       
 
-        model_path = "/Users/nayanajacob/Desktop/AIC_Dash_App/models/quail_vf_2_0_l_16khz_d42jls1e_v18.aicmodel"
+        model_path = os.path.join("models", "quail_vf_2_0_l_16khz_d42jls1e_v18.aicmodel")
+
+        #model_path = "/Users/nayanajacob/Desktop/AIC_Dash_App/models/quail_vf_2_0_l_16khz_d42jls1e_v18.aicmodel"
 
         if not os.path.exists(model_path):
             raise FileNotFoundError(f"Model file not found: {model_path}")
