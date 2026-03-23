@@ -7,5 +7,5 @@ scipy==1.11.4
 librosa==0.10.1
 soundfile==0.12.1
 python-dotenv==1.0.1
-aic-sdk==1.0.3
+aic-sdk==2.1.1
 gunicorn==21.2.0
